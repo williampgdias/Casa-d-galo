@@ -1,13 +1,31 @@
+:root {
+    --color-primary: #810827;
+    --color-text: #212b5a;
+    --color-bg: #fff;
+}
+
 body {
     font-family: "Eczar", serif;
 }
 
+
+/******************** NAV-BAR ********************/
+
 #nav-bar {
     background-image: url(../img/background.png);
+    margin-top: 85px;
     height: 100vh;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85px;
+    background-color: #fff;
 }
 
 .nav-link {
@@ -16,44 +34,81 @@ body {
 
 .nav-item .nav-link {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: #000;
 }
 
 .nav-item .nav-link:hover {
-    border-bottom: 2px solid #810827;
-    color: #810827;
+    border-bottom: 2px solid #000;
+    border-spacing: 1px;
+    color: #000;
     transition: all 200ms ease;
 }
 
+
+/******************** INTRO ********************/
+
 .intro {
     display: flex;
-    justify-content: center;
+}
+
+.box-intro {
+    display: flex;
+    align-items: center;
     text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .intro-text {
-    position: absolute;
-    top: 35%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
 }
 
-.intro h1 {
-    font-size: 90px;
-    color: #810827;
-    font-weight: 700;
-}
-
-.intro h4 {
+.intro-text h1,
+h2 {
+    color: var(--color-text);
     font-size: 40px;
-    color: #810827;
-    font-weight: 400;
 }
+
+.intro-text span:before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-text);
+    width: 90%;
+    top: 114px;
+    height: 3px;
+    left: 15px;
+}
+
+.intro-text span:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-text);
+    width: 90%;
+    top: 56%;
+    height: 3px;
+    left: 15px;
+}
+
+
+/* .intro-text span {
+    line-height: 10px;
+    border-bottom: 1px solid var(--color-text);
+    border-top: 1px solid var(--color-text);
+} */
 
 
 /******************** ABOUT US ********************/
 
 #about-us {
-    background-color: #000;
+    background-color: var(--color-bg);
     text-align: center;
     padding-bottom: 20px;
 }
@@ -70,18 +125,17 @@ body {
 
 .about-text h1 {
     font-size: 50px;
-    color: #810827;
+    color: var(--color-text);
     display: inline-block;
     padding: 0 15px;
     margin-bottom: 20px;
-    border-bottom: 3px solid #810827;
+    border-bottom: 3px solid var(--color-text);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 .about-text p {
     font-size: 20px;
-    color: #fff;
 }
 
 
@@ -94,7 +148,7 @@ body {
 
 .card {
     margin: 5px;
-    background-color: #000;
+    background-color: var(--color-bg);
     width: 240px;
     height: 150px;
 }
@@ -106,7 +160,7 @@ body {
 }
 
 .card-body h3 {
-    color: #810827;
+    color: var(--color-text);
     font-size: 25px;
 }
 
@@ -115,7 +169,7 @@ body {
 }
 
 .opening {
-    color: #fff;
+    /* color: #fff; */
 }
 
 .jumbotron {
@@ -124,6 +178,6 @@ body {
     justify-content: center;
     padding: 20px 0;
     margin-top: 10px;
-    background: #810827;
+    background: var(--color-text);
     border-radius: 20px;
 }
