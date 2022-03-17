@@ -224,16 +224,43 @@ h2 {
   transition: all 400ms ease;
 }
 
-.btn-menu {
-  border: none;
-  outline: none;
-  background-color: none;
-  text-align: center;
+.carousel-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.carousel {
-  width: 90%;
-  margin: 0 auto;
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+#prevBtn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 8px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.8;
+}
+
+#nextBtn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 18px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.8;
 }
 
 
