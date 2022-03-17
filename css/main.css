@@ -190,7 +190,7 @@ h2 {
 }
 
 .menu h1 {
-  font-size: 50px;
+  font-size: 3rem;
   color: var(--color-bg);
   display: inline-block;
   padding: 0 15px;
@@ -199,5 +199,42 @@ h2 {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+
+
+.sub-menu ul {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.sub-menu ul li {
+  list-style: none;
+}
+
+.sub-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+}
+
+.sub-menu ul li a:hover {
+  border-bottom: 2px solid #fff;
+  transition: all 400ms ease;
+}
+
+.btn-menu {
+  border: none;
+  outline: none;
+  background-color: none;
+  text-align: center;
+}
+
+.carousel {
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 /******************** RESPONSIVE ********************/
