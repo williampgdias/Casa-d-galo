@@ -9,9 +9,24 @@ body {
   background-color: #000;
 }
 
+/******************** NAV-BAR RESPONSIVE ********************/
+.navbar {
+  display: none;
+}
+
+.navbar-brand {
+  color: #000 !important;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.navbar .nav-item .nav-link {
+  color: var(--color-text);
+}
+
+
 /******************** NAV-BAR ********************/
-
-
 .nav {
   flex-wrap: nowrap;
   font-size: 1.6rem;
@@ -45,12 +60,16 @@ body {
 }
 
 #myBtn:hover {
-  background-color: var(--color-primary); /* Add a dark-grey background on hover */
+  background-color: var(--color-primary);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 540px) {
+  .navbar {
+    display: block;
+    font-size: 1.4rem;
+  }
   .nav {
-    font-size: 1.1rem;
+    display: none;
   }
 }
 
@@ -259,5 +278,14 @@ h2 {
   opacity: 0.8;
 }
 
+@media (max-width: 540px) {
+  .carousel {
+    display: none;
+  }
+}
 
-/******************** RESPONSIVE ********************/
+@media (min-width: 800px) and (max-width: 1000px) {
+  .carousel-container {
+    width: 60%;
+  }
+}
