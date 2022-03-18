@@ -200,29 +200,7 @@ h2 {
   border-bottom-right-radius: 15px;
 }
 
-
-
-.sub-menu ul {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-}
-
-.sub-menu ul li {
-  list-style: none;
-}
-
-.sub-menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  margin: 10px;
-}
-
-.sub-menu ul li a:hover {
-  border-bottom: 2px solid #fff;
-  transition: all 400ms ease;
-}
+/******************** MENU CAROUSEL ********************/
 
 .carousel-container {
   width: 80%;
